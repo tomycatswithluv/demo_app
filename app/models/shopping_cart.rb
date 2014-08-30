@@ -9,6 +9,7 @@ class ShoppingCart < ActiveRecord::Base
   
   def getUser
     thisUser=User.new("test", "testing")
+    puts"Jenkins was tested here."
     puts "@@@@@@Carrt initializes the user:  " + thisUser.getUser.to_s
     return thisUser.getUser.to_s
   end

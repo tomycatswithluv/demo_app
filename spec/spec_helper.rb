@@ -11,8 +11,16 @@
 # that actually need it.
 #
 
-
 ENV["RAILS_ENV"] || 'test'
+
+if ENV['RAILS_ENV'] == 'test'
+  require 'simplecov'
+  require 'simplecov-rcov'
+  SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+  SimpleCov.start 'rails'
+  puts "required simplecov"
+end
+
 require File.expand_path("../../config/environment", __FILE__)
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
