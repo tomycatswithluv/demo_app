@@ -24,9 +24,9 @@ end
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '2.0.2'
 
-group :production do
-    gem 'pg', '0.12.2'
-end
+#group :production do
+#    gem 'pg', '0.12.2'
+#end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
