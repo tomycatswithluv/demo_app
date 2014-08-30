@@ -41,6 +41,9 @@ gem 'spring',        group: :development
 gem 'rspec'
 gem 'rspec-rails'
 gem 'rspec-rails-mocha'
+gem 'simplecov', :require => false, :group => :test
+gem "simplecov-rcov", :require => false, :group => :test
+gem "ci_reporter_rspec", :require => false, :group => :test
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
